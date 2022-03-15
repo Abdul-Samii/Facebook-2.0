@@ -4,7 +4,7 @@ import React from 'react'
 const SidebarRow = ({src, Icon, title}) =>{
     return(
         <div className='flex items-center p-4 space-x-2 bg-gray-100
-            hover:bg-gray-200 cursor-pointer rounded-xl
+            hover:bg-gray-200 cursor-pointer rounded-xl 
         '>
             {src && (
                 <Image

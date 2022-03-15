@@ -1,21 +1,24 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Feed from '../components/Feed'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
 
 const Home = () =>{
   return(
-    <div>
+    <div className='h-screen bg-gray-100 overflow-hidden'>
     <Head>
       <title>Facebook</title>
     </Head>
 
     {/* Header */}
     <Header/>
-    <main>
+    <main className='flex'>
         {/* Sidebar */}
         <Sidebar/>
+        
         {/* Feed */}
+        <Feed/>
         {/* Widgets */}
     </main>
     </div>
